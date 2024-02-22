@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5CAFCA35-D843-4668-93F3-833EA5C8D383"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71017CA8-EAD4-45A9-93B4-CDD9BC961D11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ai-image-generator/ImageProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "createImage(parameters:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71017CA8-EAD4-45A9-93B4-CDD9BC961D11 - 3079aca6d5edc463"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "71017CA8-EAD4-45A9-93B4-CDD9BC961D11 - 9aaf56e43d3f216c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.URL&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt; in ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D365D5B0-8CAF-4150-ABFB-6643600777B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ai-image-generator/ImageProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "createImage(parameters:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D365D5B0-8CAF-4150-ABFB-6643600777B5 - ef5936f870b61800"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "D365D5B0-8CAF-4150-ABFB-6643600777B5 - 42dcfbde00763116"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "D365D5B0-8CAF-4150-ABFB-6643600777B5 - 3079aca6d5edc402"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "D365D5B0-8CAF-4150-ABFB-6643600777B5 - 9909efbde8b82603"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "D365D5B0-8CAF-4150-ABFB-6643600777B5 - 9909efbde8b82603"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ai_image_generator.ImageProvider.createImage(parameters: SwiftOpenAI.ImageCreateParameters) async throws -&gt; ()"
+                  moduleName = "ai-image-generator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harrywitcomb/Development/XcodePojects/ai-image-generator/ai-image-generator/ai-image-generator/ai-image-generator/ImageProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
