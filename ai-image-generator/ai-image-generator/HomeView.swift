@@ -9,16 +9,31 @@ import SwiftUI
 import SwiftOpenAI
 import GoogleMobileAds
 
+let bannerTestID = "ca-app-pub-3940256099942544/2934735716"
+let intersitialTestID = "ca-app-pub-3940256099942544/4411468910"
+
 struct HomeView: View {
     
+    
+    
+    private let coordinator = IntersitialAdCoordinator()
+    private let adViewControllerRepresentable = AdViewControllerRepresentable()
+    
     @State private var imageProvider: ImageProvider
+    
     @State private var isLoading = false
+    
     @State private var imagePrompt = ""
     @State private var imageEditPrompt = ""
+    
     @State private var errorMessage = ""
     @State private var editImageAlertShown = false
+        
+    @State private var imageCreateCount = 0
     
     @State private var displayedImage = UIImage()
+    
+    
         
     let testImageURL = "https://oaidalleapiprodscus.blob.core.windows.net/private/org-vBsShdpfty1vqph8rhkyD7LE/user-8Tl0ByUvLWJixkQPAQLGoAKL/img-ugCYbXoOqU0WojXOYzcyni0q.png?st=2024-02-27T12%3A37%3A18Z&se=2024-02-27T14%3A37%3A18Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-27T06%3A42%3A56Z&ske=2024-02-28T06%3A42%3A56Z&sks=b&skv=2021-08-06&sig=bP3P3O41vUgOV7zAn25ugd3npjmRvWngTwXzPDkaU7I%3D"
     
@@ -26,6 +41,11 @@ struct HomeView: View {
     
     init(service: OpenAIService) {
         _imageProvider = State(initialValue: ImageProvider(service: service))
+    }
+    
+    var adViewControllerRepresentableView: some View {
+        adViewControllerRepresentable
+            .frame(width: .zero, height: .zero)
     }
     
     var body: some View {
@@ -37,16 +57,25 @@ struct HomeView: View {
                 TextField("Enter an Image Prompt", text: $imagePrompt)
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10).strokeBorder(.gray))
-               
-                
-                
-                Button(action: {createImage()}, label: {
+                Button(
+                    action: {
+                        imageCreateCount += 1
+                        print(imageCreateCount)
+                        if imageCreateCount >= 5 {
+                            coordinator.showAd(from: adViewControllerRepresentable.viewController)
+                            print(imageCreateCount)
+                            imageCreateCount = 0
+                        }
+                        //createImage()
+                    }, label: {
                    Image(systemName: "photo.badge.plus.fill")
                         .padding()
                         .foregroundColor(.white)
                         .background(Color.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 10.0))
                 })
+                .background(adViewControllerRepresentableView)
+
             }
             if !errorMessage.isEmpty {
                 Text(errorMessage)
@@ -98,9 +127,12 @@ struct HomeView: View {
             }
            
         }
+        .onAppear{
+            coordinator.loadAd()
+        }
         .padding()
         Spacer()
-         AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716").frame(height: 50)
+        AdBannerView(adUnitID: bannerTestID).frame(height: 50)
     }
     
     func createImage(){
@@ -146,6 +178,8 @@ struct HomeView: View {
         }
     }
     
+    
+    
 }
 
 struct AdBannerView: UIViewRepresentable {
@@ -161,6 +195,42 @@ struct AdBannerView: UIViewRepresentable {
         bannerView.rootViewController = UIApplication.shared.windows.first?.rootViewController
         bannerView.load(GADRequest())
         return bannerView
+    }
+}
+
+private struct AdViewControllerRepresentable: UIViewControllerRepresentable {
+    
+    let viewController = UIViewController()
+    
+    func makeUIViewController(context: Context) -> some UIViewController {
+        return viewController
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
+}
+
+private class IntersitialAdCoordinator: NSObject, GADFullScreenContentDelegate {
+    private var intersitial: GADInterstitialAd?
+    
+    func loadAd(){
+        GADInterstitialAd.load(withAdUnitID: intersitialTestID, request: GADRequest()) { ad, _ in
+            self.intersitial = ad
+            self.intersitial?.fullScreenContentDelegate = self
+        }
+    }
+    
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        intersitial = nil
+    }
+    
+    func showAd( from viewController: UIViewController) {
+        guard let intersitial = intersitial else {
+            return print("Ad not ready")
+        }
+        
+        intersitial.present(fromRootViewController: viewController)
     }
 }
 
