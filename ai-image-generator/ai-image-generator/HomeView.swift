@@ -7,7 +7,7 @@
 
 import SwiftUI
 import SwiftOpenAI
-
+import GoogleMobileAds
 
 struct HomeView: View {
     
@@ -99,6 +99,8 @@ struct HomeView: View {
            
         }
         .padding()
+        Spacer()
+         AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716").frame(height: 50)
     }
     
     func createImage(){
@@ -144,5 +146,21 @@ struct HomeView: View {
         }
     }
     
+}
+
+struct AdBannerView: UIViewRepresentable {
+    func updateUIView(_ uiView: GADBannerView, context: Context) {
+        
+    }
+    
+    let adUnitID: String
+    
+    func makeUIView(context: Context) -> GADBannerView {
+        let bannerView = GADBannerView(adSize: GADAdSizeFromCGSize(CGSize(width: 320, height: 50)))
+        bannerView.adUnitID = adUnitID
+        bannerView.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        bannerView.load(GADRequest())
+        return bannerView
+    }
 }
 
