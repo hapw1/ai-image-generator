@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F1AB3C42B8788BC00EB87FA /* ai_image_generatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1AB3C32B8788BC00EB87FA /* ai_image_generatorApp.swift */; };
-		8F1AB3C62B8788BC00EB87FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1AB3C52B8788BC00EB87FA /* HomeView.swift */; };
-		8F1AB3C82B8788C000EB87FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1AB3C72B8788C000EB87FA /* Assets.xcassets */; };
-		8F1AB3CB2B8788C000EB87FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1AB3CA2B8788C000EB87FA /* Preview Assets.xcassets */; };
-		8F1AB3D32B878AB800EB87FA /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1AB3D22B878AB800EB87FA /* SwiftOpenAI */; };
-		8F1AB3D52B87BA9500EB87FA /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1AB3D42B87BA9500EB87FA /* ImageProvider.swift */; };
+		8F1AB4032B8E261500EB87FA /* ai_image_generatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1AB4022B8E261500EB87FA /* ai_image_generatorApp.swift */; };
+		8F1AB4052B8E261500EB87FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1AB4042B8E261500EB87FA /* ContentView.swift */; };
+		8F1AB4072B8E261600EB87FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1AB4062B8E261600EB87FA /* Assets.xcassets */; };
+		8F1AB40A2B8E261600EB87FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1AB4092B8E261600EB87FA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F1AB3C02B8788BC00EB87FA /* ai-image-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ai-image-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1AB3C32B8788BC00EB87FA /* ai_image_generatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ai_image_generatorApp.swift; sourceTree = "<group>"; };
 		8F1AB3C52B8788BC00EB87FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8F1AB3C72B8788C000EB87FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F1AB3CA2B8788C000EB87FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F1AB3D42B87BA9500EB87FA /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		8F1AB3DB2B8E23A700EB87FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8F1AB4002B8E261500EB87FA /* ai-image-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ai-image-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1AB4022B8E261500EB87FA /* ai_image_generatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ai_image_generatorApp.swift; sourceTree = "<group>"; };
+		8F1AB4042B8E261500EB87FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F1AB4062B8E261600EB87FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F1AB4092B8E261600EB87FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8F1AB3BD2B8788BC00EB87FA /* Frameworks */ = {
+		8F1AB3FD2B8E261500EB87FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1AB3D32B878AB800EB87FA /* SwiftOpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				8F1AB3C22B8788BC00EB87FA /* ai-image-generator */,
+				8F1AB4012B8E261500EB87FA /* ai-image-generator */,
 				8F1AB3C12B8788BC00EB87FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,7 +50,7 @@
 		8F1AB3C12B8788BC00EB87FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F1AB3C02B8788BC00EB87FA /* ai-image-generator.app */,
+				8F1AB4002B8E261500EB87FA /* ai-image-generator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +58,7 @@
 		8F1AB3C22B8788BC00EB87FA /* ai-image-generator */ = {
 			isa = PBXGroup;
 			children = (
+				8F1AB3DB2B8E23A700EB87FA /* Info.plist */,
 				8F1AB3C32B8788BC00EB87FA /* ai_image_generatorApp.swift */,
 				8F1AB3C52B8788BC00EB87FA /* HomeView.swift */,
 				8F1AB3C72B8788C000EB87FA /* Assets.xcassets */,
@@ -72,27 +76,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8F1AB4012B8E261500EB87FA /* ai-image-generator */ = {
+			isa = PBXGroup;
+			children = (
+				8F1AB4022B8E261500EB87FA /* ai_image_generatorApp.swift */,
+				8F1AB4042B8E261500EB87FA /* ContentView.swift */,
+				8F1AB4062B8E261600EB87FA /* Assets.xcassets */,
+				8F1AB4082B8E261600EB87FA /* Preview Content */,
+			);
+			path = "ai-image-generator";
+			sourceTree = "<group>";
+		};
+		8F1AB4082B8E261600EB87FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F1AB4092B8E261600EB87FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F1AB3BF2B8788BC00EB87FA /* ai-image-generator */ = {
+		8F1AB3FF2B8E261500EB87FA /* ai-image-generator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F1AB3CE2B8788C000EB87FA /* Build configuration list for PBXNativeTarget "ai-image-generator" */;
+			buildConfigurationList = 8F1AB40B2B8E261600EB87FA /* Build configuration list for PBXNativeTarget "ai-image-generator" */;
 			buildPhases = (
-				8F1AB3BC2B8788BC00EB87FA /* Sources */,
-				8F1AB3BD2B8788BC00EB87FA /* Frameworks */,
-				8F1AB3BE2B8788BC00EB87FA /* Resources */,
+				8F1AB3FC2B8E261500EB87FA /* Sources */,
+				8F1AB3FD2B8E261500EB87FA /* Frameworks */,
+				8F1AB3FE2B8E261500EB87FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "ai-image-generator";
-			packageProductDependencies = (
-				8F1AB3D22B878AB800EB87FA /* SwiftOpenAI */,
-			);
 			productName = "ai-image-generator";
-			productReference = 8F1AB3C02B8788BC00EB87FA /* ai-image-generator.app */;
+			productReference = 8F1AB4002B8E261500EB87FA /* ai-image-generator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +125,7 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					8F1AB3BF2B8788BC00EB87FA = {
+					8F1AB3FF2B8E261500EB87FA = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -121,36 +141,36 @@
 			mainGroup = 8F1AB3B72B8788BC00EB87FA;
 			packageReferences = (
 				8F1AB3D12B878AB800EB87FA /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+				8F1AB3D82B8E227D00EB87FA /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 8F1AB3C12B8788BC00EB87FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F1AB3BF2B8788BC00EB87FA /* ai-image-generator */,
+				8F1AB3FF2B8E261500EB87FA /* ai-image-generator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8F1AB3BE2B8788BC00EB87FA /* Resources */ = {
+		8F1AB3FE2B8E261500EB87FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1AB3CB2B8788C000EB87FA /* Preview Assets.xcassets in Resources */,
-				8F1AB3C82B8788C000EB87FA /* Assets.xcassets in Resources */,
+				8F1AB40A2B8E261600EB87FA /* Preview Assets.xcassets in Resources */,
+				8F1AB4072B8E261600EB87FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8F1AB3BC2B8788BC00EB87FA /* Sources */ = {
+		8F1AB3FC2B8E261500EB87FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1AB3C62B8788BC00EB87FA /* HomeView.swift in Sources */,
-				8F1AB3C42B8788BC00EB87FA /* ai_image_generatorApp.swift in Sources */,
-				8F1AB3D52B87BA9500EB87FA /* ImageProvider.swift in Sources */,
+				8F1AB4052B8E261500EB87FA /* ContentView.swift in Sources */,
+				8F1AB4032B8E261500EB87FA /* ai_image_generatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +296,7 @@
 			};
 			name = Release;
 		};
-		8F1AB3CF2B8788C000EB87FA /* Debug */ = {
+		8F1AB40C2B8E261600EB87FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -305,7 +325,7 @@
 			};
 			name = Debug;
 		};
-		8F1AB3D02B8788C000EB87FA /* Release */ = {
+		8F1AB40D2B8E261600EB87FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,11 +366,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F1AB3CE2B8788C000EB87FA /* Build configuration list for PBXNativeTarget "ai-image-generator" */ = {
+		8F1AB40B2B8E261600EB87FA /* Build configuration list for PBXNativeTarget "ai-image-generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F1AB3CF2B8788C000EB87FA /* Debug */,
-				8F1AB3D02B8788C000EB87FA /* Release */,
+				8F1AB40C2B8E261600EB87FA /* Debug */,
+				8F1AB40D2B8E261600EB87FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -366,15 +386,15 @@
 				kind = branch;
 			};
 		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8F1AB3D22B878AB800EB87FA /* SwiftOpenAI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8F1AB3D12B878AB800EB87FA /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
-			productName = SwiftOpenAI;
+		8F1AB3D82B8E227D00EB87FA /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.1;
+			};
 		};
-/* End XCSwiftPackageProductDependency section */
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8F1AB3B82B8788BC00EB87FA /* Project object */;
 }

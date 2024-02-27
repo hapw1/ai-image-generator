@@ -21,4 +21,14 @@ import SwiftOpenAI
         let urls = try await service.createImages(parameters: parameters).data.map(\.url)
         self.images = urls.compactMap{ $0 }
     }
+    
+    func editImage(parameters: ImageEditParameters) async throws {
+        let urls = try await service.editImage(parameters: parameters).data.map(\.url)
+        self.images = urls.compactMap { $0 }
+    }
+    
+    func createImageVariations(parameters: ImageVariationParameters) async throws {
+        let urls = try await service.createImageVariations(parameters: parameters).data.map(\.url)
+        self.images = urls.compactMap { $0 }
+    }
 }
